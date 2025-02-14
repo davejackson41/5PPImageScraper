@@ -1,0 +1,84 @@
+## 5PP Image Scraper - Project File Structure
+
+### **Purpose of This Document**
+This document defines the **file structure** of the project, ensuring **clarity, organization, and maintainability**.
+It will be **updated as the project evolves**.
+
+---
+
+### **Root Project Directory: 5PP Image Scraper**
+This is the **main folder** containing all project-related files.
+
+- 📄 **5PP_Project_Charter.txt** → Defines the project's goals, scope, and deliverables.
+- 📄 **5PP_Project_Roadmap.txt** → Outlines the step-by-step development plan.
+- 📄 **5PP_Development_Guidelines.txt** → Development rules, best practices, and workflow.
+
+---
+
+### **Data Storage**
+📂 **data/** → Stores all **raw images, extracted text, and database files**.
+
+- 📂 **images/** → Contains vaccination card and child particulars images.
+  - 📂 **vaccination_cards/** → Folder for all vaccination card images.
+  - 📂 **child_particulars/** → Folder for all child particulars images.
+- 📂 **extracted_text/** → Stores extracted OCR text output in JSON format.
+- 📂 **database/** → SQLite database file and backup copies.
+
+---
+
+### **Source Code**
+📂 **src/** → Contains the core application source code.
+
+- `main.py` → Entry point of the application.
+- `image_processor.py` → Handles **image pre-processing and OCR**.
+- `db_manager.py` → Manages **database operations**.
+- `gui.py` → Graphical interface for manual corrections.
+- `ai_learning.py` → AI feedback and model training.
+
+---
+
+### **Logging & Debugging**
+📂 **logs/** → Stores logs for tracking **errors and AI model performance**.
+
+- `app.log` → Main application log.
+- `ocr_errors.log` → Logs **OCR errors** for debugging.
+
+---
+
+### **Testing**
+📂 **tests/** → Unit test scripts for **OCR accuracy and data validation**.
+
+- `test_vaccination_extraction.py` → Tests **vaccination card OCR**.
+- `test_child_extraction.py` → Tests **child particulars OCR**.
+
+---
+
+### **Documentation**
+📂 **docs/** → Stores all **documentation and guides**.
+
+- `README.md` → **Project overview** and getting started guide.
+- `setup_guide.md` → **Installation & environment setup guide**.
+- `api_reference.md` → **API and AI model integration details**.
+
+---
+
+### **AI Model & Training Data**
+📂 **models/** → Stores AI models and training datasets.
+
+- `fine_tuned_ocr_model.pkl` → **Trained OCR model** for handwritten text extraction.
+- `training_data.json` → **Collected corrections** for AI model training.
+
+---
+
+### **Utility Scripts**
+📂 **scripts/** → Contains scripts for database backups and AI model updates.
+
+- `backup_db.py` → **Creates a backup** of the SQLite database.
+- `update_model.py` → **Updates the OCR model** with new training data.
+
+---
+
+### **File Structure Maintenance**
+- **All new files must follow this structure.**
+- **Updates to the structure should be documented here.**
+- **All commits must include updates to this file when changes are made.**

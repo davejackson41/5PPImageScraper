@@ -1,0 +1,99 @@
+## 5PP Image Scraper - Session Initialization
+
+### **1. Project Overview**
+The **5PP Image Scraper** extracts handwritten text from photographed vaccination cards and child particulars forms. It stores structured data in a **SQLite database** and improves extraction accuracy using **AI feedback loops**.
+
+- **Platform**: macOS
+- **Development Tools**: Sublime Text (Editor), Terminal (Execution)
+- **AI Framework**: OpenAI OCR for handwritten text extraction
+- **Database**: SQLite for structured data storage
+- **Commit Policy**: GitHub commit **after every completed task**
+- **Development Methodology**: **Step-by-step execution, one task at a time**
+
+---
+
+### **2. Project Structure**
+📂 **Root Directory: `5PP Image Scraper`**  
+- 📂 `data/` → Stores **images, extracted text, and SQLite database**  
+- 📂 `src/` → **Main Python scripts** for processing images, AI learning, and UI  
+- 📂 `logs/` → Tracks **OCR errors & debugging information**  
+- 📂 `tests/` → Unit tests for **OCR extraction accuracy**  
+- 📂 `docs/` → Documentation & **API references**  
+- 📂 `models/` → AI **training data & fine-tuned OCR models**  
+- 📂 `scripts/` → Utility scripts (e.g., **GitHub commits, database backups**)  
+
+---
+
+### **3. Development Workflow**
+✅ **Step-by-step task execution (Only one task at a time)**  
+✅ **After each task: Validate results & commit to GitHub**  
+✅ **No skipping ahead until the previous task is fully completed**  
+✅ **Error handling and logs must be implemented in every script**  
+
+---
+
+### **4. Current Development Task**
+🟢 TASK: **(Manually update this section before each session)**  
+📌 Example: **Implement OpenAI OCR on a sample vaccination card**  
+
+---
+
+### **5. GPT Task Breakdown**
+Each task must be structured as follows:
+
+1️⃣ **Define Requirements**  
+- Input: `data/images/`
+- Output: `data/extracted_text/`
+- Constraints: **Must handle handwritten text with AI-based OCR.**  
+
+2️⃣ **File Edits**  
+- Modify/Create: `src/image_processor.py`  
+- Steps:
+  - Load image & apply preprocessing.
+  - Run OpenAI OCR on the image.
+  - Structure extracted data into JSON.
+  - Save results to `data/extracted_text/`.
+
+3️⃣ **Implementation**  
+💻 Generate & review Python code.
+
+4️⃣ **Validation**  
+✅ Run code on sample image.  
+✅ Verify OCR output against actual form.  
+✅ Debug errors & improve accuracy.
+
+5️⃣ **GitHub Commit**  
+📂 **Commit message format:**  
+[Feature/Task Name]: Short description of change
+Example: [OCR Extraction] Implemented image pre-processing
+
+---
+
+### **6. Code Style & Structure**
+🔹 **Function & Variable Naming:** `snake_case` (e.g., `extract_text()`)  
+🔹 **Class Naming:** `PascalCase` (e.g., `OCRProcessor`)  
+🔹 **Constants:** Use uppercase (e.g., `OPENAI_API_KEY`)  
+🔹 **Logging:** No print statements, use structured logs  
+🔹 **Docstrings:** Every function must have a description  
+```python
+def extract_text(image_path: str) -> dict:
+    """
+    Extract handwritten text from an image using OpenAI's OCR.
+    
+    Args:
+        image_path (str): Path to the image file.
+    
+    Returns:
+        dict: Extracted text structured in JSON format.
+    """
+
+  7. GitHub Commit Automation
+
+📌 Use the commit script (scripts/commit_changes.sh)
+
+
+8. Debugging & Error Handling
+
+🔹 Log every error instead of printing it
+🔹 OCR and database operations must have exception handling
+🔹 Errors should be written to logs/app.log

@@ -1,0 +1,109 @@
+## Project Roadmap: 5PP Image Scraper
+
+This roadmap outlines the **step-by-step tasks** required to build and refine the 5PP Image Scraper. The project will follow an **agile development** approach, iterating over time to improve AI performance and usability.
+
+---
+
+### **Stage 1 - Enable OCR through OpenAI & Test Results on 1 Image (Vaccination Card)**
+✅ Set up Python environment with required libraries (`openai`, `opencv`, `pytesseract`, `sqlite3`, etc.)  
+✅ Obtain OpenAI API key and set up authentication  
+✅ Load a **single sample vaccination card image**  
+✅ Pre-process image (grayscale conversion, thresholding, noise removal)  
+✅ Run OpenAI OCR to extract text  
+✅ Parse extracted text into structured format  
+✅ Manually compare extracted text with actual text on the card  
+✅ Log errors and evaluate OCR accuracy  
+✅ Adjust image pre-processing to improve OCR quality  
+✅ Save extracted data as a JSON file for further validation  
+
+---
+
+### **Stage 2 - Establish Vaccination Card Data Model & SQLite Integration**
+✅ Define **vaccination card data model** (fields: name, date, vaccine type, batch, etc.)  
+✅ Create SQLite database and table for **vaccination records**  
+✅ Develop function to map extracted text into corresponding database fields  
+✅ Implement error handling for incomplete/missing data  
+✅ Write extracted data to SQLite database  
+✅ Retrieve and verify stored data to ensure accuracy  
+✅ Create an export function (CSV/JSON) for extracted records  
+
+---
+
+### **Stage 3 - Establish GUI to View Image & Run AI**
+✅ Select lightweight GUI framework (`Tkinter`, `PyQt`, or `Streamlit`)  
+✅ Create interface to **upload & display images**  
+✅ Implement **"Run OCR"** button to process selected image  
+✅ Display extracted text on the GUI next to the image  
+✅ Add **"Save to Database"** button to store results  
+✅ Enable manual correction of extracted data within the UI  
+✅ Ensure UI can **handle multiple images** in a session  
+
+---
+
+### **Stage 4 - Enable AI for Child Particulars & Expand Database**
+✅ Obtain **sample Child Particulars form**  
+✅ Define **Child Particulars data model** (fields: name, DOB, guardian, etc.)  
+✅ Add **Child Particulars table** to SQLite database  
+✅ Update image-processing functions to differentiate between **Vaccination Cards** and **Child Particulars**  
+✅ Implement text extraction for Child Particulars  
+✅ Store extracted Child Particulars data in SQLite  
+✅ Validate and verify extracted data against original images  
+
+---
+
+### **Stage 5 - Enhance GUI for Multi-Form Selection**
+✅ Update UI to allow **selection between Vaccination Card & Child Particulars**  
+✅ Add drop-down or buttons to select form type  
+✅ Ensure the correct **OCR pipeline** is triggered based on form type  
+✅ Enable switching between processed images in UI  
+✅ Improve UI responsiveness & error handling  
+
+---
+
+### **Stage 6 - Enable AI Learning for Vaccination Cards**
+✅ Implement manual correction system in UI  
+✅ As user corrects text, **log corrections for AI learning**  
+✅ Store corrections as **feedback dataset**  
+✅ Adjust OCR processing dynamically based on user corrections  
+✅ Develop an adaptive learning module that **improves extraction over time**  
+✅ Enable **manual tagging** of missing fields for better AI predictions  
+
+---
+
+### **Stage 7 - Improve OCR Model Using Iterative Training**
+✅ Feed AI multiple **different versions** of Vaccination Cards  
+✅ Identify patterns and inconsistencies in extraction  
+✅ Optimize **image pre-processing** (cropping, thresholding, rotation, etc.)  
+✅ Use **regex and AI-based field validation** to auto-correct extracted text  
+✅ Train model to recognize **common errors & corrections**  
+✅ Introduce **automated validation rules** (e.g., valid date formats, expected vaccine names)  
+
+---
+
+### **Stage 8 - Enable AI Learning for Child Particulars**
+✅ Implement similar **learning workflow** as Vaccination Cards  
+✅ Validate extracted **Child Particulars** against training data  
+✅ Optimize field recognition (e.g., distinguishing between parent & child names)  
+✅ Implement auto-fixes for common OCR mistakes  
+✅ Adjust GUI to provide **real-time AI feedback** on extracted data  
+
+---
+
+### **Stage 9 - Improve OCR Accuracy & Expand AI Capabilities**
+✅ Run iterative **testing on large datasets**  
+✅ Expand OCR **training dataset** with additional real-world samples  
+✅ Implement AI-based **data confidence scoring** (highlight low-confidence fields for review)  
+✅ Develop a feature to suggest **alternative AI interpretations** when confidence is low  
+✅ Finalize **version 1.0** with **high extraction accuracy & streamlined UI**  
+✅ Gather user feedback and iterate on the solution  
+
+---
+
+## **Ongoing Enhancements & Future Considerations**
+🔄 Enable AI to **auto-classify images** as Vaccination or Child Particulars  
+🔄 Implement **batch image processing**  
+🔄 Improve OCR pipeline with **deep learning-based handwriting recognition**  
+🔄 Explore **local AI model deployment** to avoid API dependency  
+🔄 Build **export & reporting features** for database insights  
+
+---

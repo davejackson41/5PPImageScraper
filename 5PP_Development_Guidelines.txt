@@ -1,0 +1,92 @@
+## 5PP Development Rules & Approach
+
+This file serves as a reference for all development sessions, ensuring **consistency, efficiency, and alignment with project goals**.
+
+---
+
+### **1. Development Environment**
+✅ **Platform**: macOS  
+✅ **Code Editor**: Sublime Text (default)  
+✅ **Version Control**: GitHub (commit after each completed task)  
+✅ **Required Libraries**: OpenAI API, OpenCV, SQLite3, PyQt/Tkinter  
+
+---
+
+### **2. Core Principles**
+- All development follows the **5PP Project Charter**.
+- **Each task is tackled sequentially**—do not move to the next until:
+  1. The current task is **fully implemented**.
+  2. The final output (code or screenshot) is **validated**.
+  3. The task is **committed to GitHub**.
+
+---
+
+### **3. Development Cadence**
+1️⃣ **Define Task**: Clearly state the development goal.  
+2️⃣ **Step-by-Step Execution**: Write **detailed** instructions including:
+   - Code snippets
+   - Commands for opening/editing files in Sublime Text
+3️⃣ **Code Review**: Ensure alignment with the **data model & standards**.  
+4️⃣ **Testing & Validation**: Confirm output correctness.  
+5️⃣ **Commit to GitHub** with **descriptive commit messages**.  
+
+---
+
+### **4. AI & Data Model Guidelines**
+🔹 **Handwritten text extraction** will use the OpenAI framework.  
+🔹 **Data will be structured** using predefined tables in SQLite.  
+🔹 **Date Format**: All dates must follow `YYYY-MM-DD` (ISO standard).  
+🔹 **AI Learning**: Model should adapt from **manual corrections** in the UI.  
+
+---
+
+### **5. File & Code Management**
+📂 **File Structure**:
+- Maintain a **clean project directory**.
+- Separate **data, scripts, logs, and UI components**.
+
+📜 **Code Standards**:
+- Use **consistent function naming** (`snake_case` for Python).
+- **Comment every function** to explain its purpose.
+- **Log errors** instead of silent failures.
+
+📌 **Editing Workflow**:
+- Always open/edit files in **Sublime Text**.
+- Follow structured naming conventions for scripts.
+
+---
+
+### **6. GitHub Commit Policy**
+✅ **After Every Task**:
+   - Validate changes.
+   - Format code properly.
+   - Write **clear, concise commit messages**.
+   - Push changes to the repository.
+
+✅ **Commit Message Format**:
+[Feature/Task Name]: Short description of change
+Example: [OCR Extraction] Implemented image pre-processing
+
+✅ **Branching Strategy**:
+- Use feature branches for major updates.
+- Merge only after validation.
+
+---
+
+### **7. Error Handling & Debugging**
+🔹 Implement **robust error handling** in OCR and database scripts.  
+🔹 Use **logging** for debugging AI errors and corrections.  
+🔹 **Catch missing/invalid fields** before writing to the database.  
+
+---
+
+### **8. Testing & Continuous Improvement**
+🔄 **Test against real-world images** for accuracy.  
+🔄 Adjust pre-processing to **improve text extraction**.  
+🔄 Benchmark AI **performance over time** with different datasets.  
+
+---
+
+## **Final Notes**
+🚀 **Follow this framework strictly** to ensure smooth development.  
+🛠️ **All development should contribute to the long-term goals of the project.**  
