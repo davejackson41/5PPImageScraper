@@ -53,6 +53,7 @@ This file serves as a reference for all development sessions, ensuring **consist
 📌 **Editing Workflow**:
 - Always open/edit files in **Sublime Text**.
 - Follow structured naming conventions for scripts.
+- One step at a time to increase GPT response.  Do not move to next step until confirmation of existing step.
 
 ---
 
