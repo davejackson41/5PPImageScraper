@@ -1,3 +1,4 @@
+## [2025-02-14 10:41:59] Improved image preprocessing for better OCR accuracy. Enhanced contrast, applied histogram equalization, and used adaptive thresholding.
 ## [2025-02-14 08:37:47] Testing top-appended log entry.
 ## [$(date +"%Y-%m-%d %H:%M:%S")] Virtual Environment Setup
 - Issue: MacOS Homebrew-managed Python prevents system-wide package installation with `pip3`.
