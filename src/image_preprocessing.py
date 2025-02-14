@@ -2,9 +2,10 @@ import cv2
 import numpy as np
 import os
 
-# Define image path
-IMAGE_PATH = "data/images/vaccination_cards/1713782940159.jpg"
-OUTPUT_PATH = "data/images/vaccination_cards/processed_vaccination.jpg"
+# Define paths
+IMAGE_PATH = "data/images/vaccination_cards/1713782940159.jpg"  # Change this dynamically later if needed
+IMAGE_NAME = os.path.basename(IMAGE_PATH)
+OUTPUT_PATH = f"data/images/vaccination_cards/processed_{IMAGE_NAME}"
 
 def preprocess_image(image_path, output_path):
     """Loads an image and applies improved preprocessing for OCR."""
