@@ -1,5 +1,5 @@
 #!/bin/sh
-'''exec' "/Users/davejackson/Documents/5PP Image Scraper/venv/bin/python3.10" "$0" "$@"
+'''exec' "/Users/davejackson/Documents/5PP Image Scraper/venv/bin/python3.13" "$0" "$@"
 ' '''
 # -*- coding: utf-8 -*-
 import re

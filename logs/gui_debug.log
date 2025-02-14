@@ -1,0 +1,113 @@
+2025-02-14 12:00:30,844 - INFO - GUI started.
+2025-02-14 12:00:30,852 - INFO - Updating record dropdown.
+2025-02-14 12:00:30,852 - INFO - Loaded 1 records into dropdown.
+2025-02-14 12:00:37,698 - INFO - Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:00:37,699 - WARNING - Image file not found for record: extracted_1713782940159
+2025-02-14 12:00:58,582 - INFO - New image loaded: 1713677378840.jpg
+2025-02-14 12:00:59,985 - INFO - Updating record dropdown.
+2025-02-14 12:00:59,987 - INFO - Loaded 1 records into dropdown.
+2025-02-14 12:01:08,782 - INFO - Changes saved for record ID 1
+2025-02-14 12:29:20,166 - INFO - Processing image: data/images/vaccination_cards/1713677378840.jpg
+2025-02-14 12:29:20,189 - INFO - Processed image saved: data/images/vaccination_cards/processed_1713677378840.jpg
+2025-02-14 12:29:20,189 - INFO - Running OCR on image: data/images/vaccination_cards/processed_1713677378840.jpg
+2025-02-14 12:29:20,341 - DEBUG - ['tesseract', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_a2fuo636_input.JPEG', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_a2fuo636', 'txt']
+2025-02-14 12:29:20,764 - INFO - OCR extraction complete. Text saved to: data/extracted_text/extracted_processed_1713677378840.jpg.txt
+2025-02-14 12:29:20,764 - ERROR - Error inserting new record: table vaccination_records has no column named extracted_text
+2025-02-14 12:35:42,289 - INFO - GUI started.
+2025-02-14 12:35:47,163 - INFO - Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:35:47,165 - WARNING - Image file not found for record: extracted_1713782940159
+2025-02-14 12:35:54,237 - INFO - Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:35:54,239 - WARNING - Image file not found for record: extracted_1713782940159
+2025-02-14 12:37:06,297 - INFO - Processing image: data/images/vaccination_cards/1713679161186.jpg
+2025-02-14 12:37:06,321 - INFO - Processed image saved: data/images/vaccination_cards/processed_1713679161186.jpg
+2025-02-14 12:37:06,321 - INFO - Running OCR on image: data/images/vaccination_cards/processed_1713679161186.jpg
+2025-02-14 12:37:06,357 - DEBUG - ['tesseract', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_mdebqg3q_input.JPEG', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_mdebqg3q', 'txt']
+2025-02-14 12:37:06,653 - INFO - OCR extraction complete. Text saved to: data/extracted_text/extracted_processed_1713679161186.jpg.txt
+2025-02-14 12:37:06,657 - ERROR - Error inserting new record: table vaccination_records has no column named extracted_text
+2025-02-14 12:41:25,204 - INFO - ✅ GUI started.
+2025-02-14 12:41:25,213 - INFO - 🔄 Updated record dropdown. 1 records loaded.
+2025-02-14 12:41:28,503 - INFO - 📄 Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:41:28,505 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:41:28,506 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:52:10,778 - INFO - ✅ GUI started.
+2025-02-14 12:52:12,545 - INFO - 🔄 Updated record dropdown. 1 records loaded.
+2025-02-14 12:52:15,289 - INFO - 📄 Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:52:15,291 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:52:15,291 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:52:16,704 - INFO - ✅ Successfully loaded record 1 from database.
+2025-02-14 12:52:48,212 - INFO - 📷 New image loaded: 1713678584880.jpg
+2025-02-14 12:52:48,215 - INFO - Processing image: data/images/vaccination_cards/1713678584880.jpg
+2025-02-14 12:52:48,233 - INFO - Processed image saved: data/images/vaccination_cards/processed_1713678584880.jpg
+2025-02-14 12:52:48,233 - INFO - Running OCR on image: data/images/vaccination_cards/processed_1713678584880.jpg
+2025-02-14 12:52:48,277 - DEBUG - ['tesseract', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_slhnw1l7_input.JPEG', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_slhnw1l7', 'txt']
+2025-02-14 12:52:48,796 - INFO - OCR extraction complete. Text saved to: data/extracted_text/extracted_processed_1713678584880.jpg.txt
+2025-02-14 12:52:48,799 - ERROR - ❌ Error inserting record: table vaccination_records has no column named extracted_text
+2025-02-14 12:56:43,379 - INFO - 🛠️ Adding missing 'extracted_text' column...
+2025-02-14 12:56:43,380 - INFO - ✅ Column added successfully!
+2025-02-14 12:57:31,136 - INFO - ✅ 'extracted_text' column already exists.
+2025-02-14 12:57:31,371 - INFO - ✅ GUI started.
+2025-02-14 12:57:33,423 - INFO - 🔄 Updated record dropdown. 1 records loaded.
+2025-02-14 12:57:42,103 - INFO - 📷 New image loaded: 1713677397127.jpg
+2025-02-14 12:57:42,103 - INFO - Processing image: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:42,121 - INFO - Processed image saved: data/images/vaccination_cards/processed_1713677397127.jpg
+2025-02-14 12:57:42,121 - INFO - Running OCR on image: data/images/vaccination_cards/processed_1713677397127.jpg
+2025-02-14 12:57:42,139 - DEBUG - ['tesseract', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_vjcwgzdt_input.JPEG', '/var/folders/tx/r6z8ncf97bj0dkbgzxqhc9w40000gn/T/tess_vjcwgzdt', 'txt']
+2025-02-14 12:57:42,593 - INFO - OCR extraction complete. Text saved to: data/extracted_text/extracted_processed_1713677397127.jpg.txt
+2025-02-14 12:57:42,594 - INFO - ✅ Successfully inserted record: 1713677397127.jpg
+2025-02-14 12:57:46,770 - INFO - 🔄 Updated record dropdown. 2 records loaded.
+2025-02-14 12:57:46,770 - INFO - 📄 Loading record ID: 1 (Image: 1713677397127.jpg)
+2025-02-14 12:57:46,770 - INFO - ✅ Found image: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:46,770 - INFO - ✅ Image found: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:46,802 - DEBUG - tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x03\xe8'
+2025-02-14 12:57:46,802 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 110 - value: b'SM-M127G\x00'
+2025-02-14 12:57:46,802 - DEBUG - tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\x02\xee'
+2025-02-14 12:57:46,802 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 58 - Data Location: 119 - value: b'samsung\x00'
+2025-02-14 12:57:46,802 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 127 - value: b'M127GXXS7DWL1\x00'
+2025-02-14 12:57:46,802 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa1'
+2025-02-14 12:57:46,802 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x06'
+2025-02-14 12:57:46,802 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 106 - Data Location: 141 - value: b'2024:04:21 07:29:54\x00'
+2025-02-14 12:57:46,964 - INFO - ✅ Successfully loaded record 1 from database.
+2025-02-14 12:57:51,696 - INFO - 📄 Loading record ID: 2 (Image: 1713677397127.jpg)
+2025-02-14 12:57:51,698 - INFO - ✅ Found image: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:51,698 - INFO - ✅ Image found: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:51,699 - DEBUG - tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x03\xe8'
+2025-02-14 12:57:51,699 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 110 - value: b'SM-M127G\x00'
+2025-02-14 12:57:51,699 - DEBUG - tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\x02\xee'
+2025-02-14 12:57:51,699 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 58 - Data Location: 119 - value: b'samsung\x00'
+2025-02-14 12:57:51,699 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 127 - value: b'M127GXXS7DWL1\x00'
+2025-02-14 12:57:51,700 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa1'
+2025-02-14 12:57:51,700 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x06'
+2025-02-14 12:57:51,700 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 106 - Data Location: 141 - value: b'2024:04:21 07:29:54\x00'
+2025-02-14 12:57:51,730 - INFO - ✅ Successfully loaded record 2 from database.
+2025-02-14 12:57:54,561 - INFO - 📄 Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:57:54,563 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:57:54,563 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:57:56,088 - INFO - ✅ Successfully loaded record 1 from database.
+2025-02-14 12:57:58,587 - INFO - 📄 Loading record ID: 2 (Image: 1713677397127.jpg)
+2025-02-14 12:57:58,590 - INFO - ✅ Found image: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:58,590 - INFO - ✅ Image found: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:57:58,590 - DEBUG - tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x03\xe8'
+2025-02-14 12:57:58,590 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 110 - value: b'SM-M127G\x00'
+2025-02-14 12:57:58,590 - DEBUG - tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\x02\xee'
+2025-02-14 12:57:58,591 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 58 - Data Location: 119 - value: b'samsung\x00'
+2025-02-14 12:57:58,591 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 127 - value: b'M127GXXS7DWL1\x00'
+2025-02-14 12:57:58,591 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa1'
+2025-02-14 12:57:58,591 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x06'
+2025-02-14 12:57:58,591 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 106 - Data Location: 141 - value: b'2024:04:21 07:29:54\x00'
+2025-02-14 12:57:58,620 - INFO - ✅ Successfully loaded record 2 from database.
+2025-02-14 12:58:29,675 - INFO - 📄 Loading record ID: 2 (Image: 1713677397127.jpg)
+2025-02-14 12:58:29,680 - INFO - ✅ Found image: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:58:29,680 - INFO - ✅ Image found: data/images/vaccination_cards/1713677397127.jpg
+2025-02-14 12:58:29,682 - DEBUG - tag: ImageWidth (256) - type: long (4) - value: b'\x00\x00\x03\xe8'
+2025-02-14 12:58:29,682 - DEBUG - tag: Model (272) - type: string (2) Tag Location: 34 - Data Location: 110 - value: b'SM-M127G\x00'
+2025-02-14 12:58:29,683 - DEBUG - tag: ImageLength (257) - type: long (4) - value: b'\x00\x00\x02\xee'
+2025-02-14 12:58:29,683 - DEBUG - tag: Make (271) - type: string (2) Tag Location: 58 - Data Location: 119 - value: b'samsung\x00'
+2025-02-14 12:58:29,683 - DEBUG - tag: Software (305) - type: string (2) Tag Location: 70 - Data Location: 127 - value: b'M127GXXS7DWL1\x00'
+2025-02-14 12:58:29,683 - DEBUG - tag: ExifIFD (34665) - type: long (4) - value: b'\x00\x00\x00\xa1'
+2025-02-14 12:58:29,683 - DEBUG - tag: Orientation (274) - type: short (3) - value: b'\x00\x06'
+2025-02-14 12:58:29,683 - DEBUG - tag: DateTime (306) - type: string (2) Tag Location: 106 - Data Location: 141 - value: b'2024:04:21 07:29:54\x00'
+2025-02-14 12:58:29,713 - INFO - ✅ Successfully loaded record 2 from database.
+2025-02-14 12:58:32,107 - INFO - 📄 Loading record ID: 1 (Image: extracted_1713782940159)
+2025-02-14 12:58:32,109 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:58:32,109 - WARNING - ⚠️ Image file not found: extracted_1713782940159
+2025-02-14 12:58:33,451 - INFO - ✅ Successfully loaded record 1 from database.

@@ -13,3 +13,11 @@
 ## [2025-02-14 08:35:04] 
 
 ## [2025-02-14 08:36:51] Fixed log script - Now properly recording messages.
+
+## [2025-02-14 13:00:11] Database Fixes & GUI Debugging
+- Added missing 'extracted_text' column to database.
+- Verified schema update with SQLite command.
+- Inserted a test record to validate insertion.
+- Debugged GUI issues with dropdown and missing images.
+- Logs confirmed database queries are executing correctly.
+- Next Steps: Ensure GUI loads all processed records and displays original images.
