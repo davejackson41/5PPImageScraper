@@ -40,7 +40,7 @@ def extract_text_from_image(image_path):
     # Extract and save the text
     extracted_text = response.choices[0].message.content
 
-    output_path = f"data/extracted_text/extracted_{IMAGE_NAME}.txt"
+    output_path = f"data/extracted_text/extracted_{IMAGE_NAME.replace('.jpg', '')}.txt"
     with open(output_path, "w") as f:
         f.write(extracted_text)
 
