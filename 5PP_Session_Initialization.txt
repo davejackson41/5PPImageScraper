@@ -9,6 +9,11 @@ The **5PP Image Scraper** extracts handwritten text from photographed vaccinatio
 - **Database**: SQLite for structured data storage
 - **Commit Policy**: GitHub commit **after every completed task**
 - **Development Methodology**: **Step-by-step execution, one task at a time**
+- **Python Virtual Environment (Required!)**:  
+
+📌 **Before running any scripts, activate the virtual environment:**
+```bash
+source venv/bin/activate
 
 ---
 
@@ -62,10 +67,14 @@ Each task must be structured as follows:
 ✅ Verify OCR output against actual form.  
 ✅ Debug errors & improve accuracy.
 
-5️⃣ **GitHub Commit**  
-📂 **Commit message format:**  
-[Feature/Task Name]: Short description of change
-Example: [OCR Extraction] Implemented image pre-processing
+5️⃣ ### **5. GitHub Commit Automation**
+✅ **All commits must be done using the commit automation script**.  
+✅ **Manual Git commits should NOT be used unless troubleshooting.**  
+
+📌 **How to Commit Changes**:
+1. Run the following command in Terminal:
+   ```bash
+   bash scripts/commit_changes.sh
 
 ---
 
@@ -97,3 +106,12 @@ def extract_text(image_path: str) -> dict:
 🔹 Log every error instead of printing it
 🔹 OCR and database operations must have exception handling
 🔹 Errors should be written to logs/app.log
+
+9.  ### **Project Logging**
+✅ **All project updates must be logged in `logs/dev_log.txt`**.  
+✅ **To append new log entries, use the automated script:**  
+
+📌 **How to Log an Update**
+```bash
+bash scripts/update_dev_log.sh
+

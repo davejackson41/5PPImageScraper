@@ -1,0 +1,12 @@
+## [2025-02-14 08:37:47] Testing top-appended log entry.
+## [$(date +"%Y-%m-%d %H:%M:%S")] Virtual Environment Setup
+- Issue: MacOS Homebrew-managed Python prevents system-wide package installation with `pip3`.
+- Solution: Created and activated a **Python virtual environment (venv)**.
+- Commands used:
+  ```bash
+  python3 -m venv venv
+  source venv/bin/activate
+  pip install openai opencv-python pytesseract numpy pillow
+## [2025-02-14 08:35:04] 
+
+## [2025-02-14 08:36:51] Fixed log script - Now properly recording messages.
